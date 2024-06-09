@@ -28,12 +28,19 @@ const styles = StyleSheet.create({
   linksContainer: {
     width: '100%',
     marginBottom: 20,
+    alignItems: 'center', // Ensures the buttons are centered
   },
-  link: {
-    fontSize: 18,
-    color: '#1E90FF',
-    textAlign: 'center',
+  button: {
+    width: '90%', // Makes the button take up 90% of the width
+    backgroundColor: '#1E90FF',
+    paddingVertical: 10,
+    borderRadius: 25,
     marginVertical: 5,
+    alignItems: 'center',
+  },
+  buttonText: {
+    fontSize: 18,
+    color: '#fff',
   },
   quote: {
     fontSize: 16,

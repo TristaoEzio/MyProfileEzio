@@ -1,22 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
 import {
   View,
   Text,
   Image,
-  StyleSheet,
   Linking,
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
+import styles from '../../MyProfileEzio/src/styles/profileStyles';
 
-const ProfileScreen = () => {
+const ProfileScreen: React.FC = () => {
   const handlePress = (url: string) => {
     Linking.openURL(url);
   };
@@ -46,22 +39,33 @@ const ProfileScreen = () => {
 
       <View style={styles.linksContainer}>
         <TouchableOpacity
+          accessible={true}
+          accessibilityLabel="GitHub Profile"
+          style={styles.button}
           onPress={() => handlePress('https://github.com/TristaoEzio')}>
-          <Text style={styles.link}>GitHub</Text>
+          <Text style={styles.buttonText}>GitHub</Text>
         </TouchableOpacity>
         <TouchableOpacity
+          accessible={true}
+          accessibilityLabel="LinkedIn Profile"
+          style={styles.button}
           onPress={() =>
-            handlePress('https://www.linkedin.com/in/your-profile')
-          }>
-          <Text style={styles.link}>LinkedIn</Text>
+            handlePress('https://www.linkedin.com/in/your-profile')}>
+          <Text style={styles.buttonText}>LinkedIn</Text>
         </TouchableOpacity>
         <TouchableOpacity
+          accessible={true}
+          accessibilityLabel="WhatsApp Contact"
+          style={styles.button}
           onPress={() => handlePress('https://wa.me/your-whatsapp-number')}>
-          <Text style={styles.link}>WhatsApp</Text>
+          <Text style={styles.buttonText}>WhatsApp</Text>
         </TouchableOpacity>
         <TouchableOpacity
+          accessible={true}
+          accessibilityLabel="Twitter Profile"
+          style={styles.button}
           onPress={() => handlePress('https://twitter.com/your-profile')}>
-          <Text style={styles.link}>X (Twitter)</Text>
+          <Text style={styles.buttonText}>X (Twitter)</Text>
         </TouchableOpacity>
       </View>
 
@@ -71,49 +75,5 @@ const ProfileScreen = () => {
     </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    alignItems: 'center',
-    padding: 20,
-    backgroundColor: '#fff',
-  },
-  profileImage: {
-    width: 130,
-    height: 130,
-    borderRadius: 75,
-    marginBottom: 20,
-    marginTop: 100,
-  },
-  name: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  bio: {
-    fontSize: 16,
-    textAlign: 'justify',
-    marginBottom: 20,
-    paddingHorizontal: 20,
-  },
-  linksContainer: {
-    width: '100%',
-    marginBottom: 20,
-  },
-  link: {
-    fontSize: 18,
-    color: '#1E90FF',
-    textAlign: 'center',
-    marginVertical: 5,
-  },
-  quote: {
-    fontSize: 16,
-    fontStyle: 'italic',
-    textAlign: 'center',
-    marginTop: 20,
-    paddingHorizontal: 20,
-  },
-});
 
 export default ProfileScreen;

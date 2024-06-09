@@ -5,7 +5,7 @@ import styles from '../styles/profileStyles'; // Assuming you have a common styl
 
 const ServiceCard: React.FC = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.cardContainer}>
       <AccordionItem
         title="Lead Mobile Developer"
         content="Lead mobile developer with 10 years of experience."

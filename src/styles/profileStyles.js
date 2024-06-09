@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -67,6 +67,11 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 14,
     color: '#555',
+  },
+  cardContainer: {
+    width: '100%',
+    alignItems: 'center',
+    marginTop: 30,
   },
 });
 

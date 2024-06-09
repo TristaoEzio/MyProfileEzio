@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   LayoutAnimation,
   StyleSheet,
+  Dimensions,
 } from 'react-native';
 
 interface AccordionItemProps {
@@ -57,7 +58,12 @@ const AccordionItem: React.FC<AccordionItemProps> = ({title, content}) => {
 
 const styles = StyleSheet.create({
   container: {
+    width: Dimensions.get('window').width - 40,
     marginBottom: 20,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    overflow: 'hidden',
+    elevation: 2,
   },
   header: {
     flexDirection: 'row',
@@ -65,6 +71,7 @@ const styles = StyleSheet.create({
     padding: 20,
     borderBottomWidth: 1,
     borderColor: '#ccc',
+    backgroundColor: '#f8f8f8',
   },
   title: {
     fontSize: 22,
@@ -73,10 +80,11 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 20,
+    backgroundColor: '#f0f0f0',
   },
   icon: {
-    width: 40,
-    height: 40,
+    width: 20,
+    height: 20,
   },
 });
 

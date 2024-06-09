@@ -83,8 +83,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
   },
   icon: {
-    width: 20,
-    height: 20,
+    width: 30,
+    height: 30,
   },
 });
 

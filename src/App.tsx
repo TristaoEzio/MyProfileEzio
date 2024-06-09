@@ -1,5 +1,5 @@
 import React from 'react';
-import {Linking, ScrollView} from 'react-native';
+import {Linking, ScrollView, Text} from 'react-native';
 import ProfileImage from './components/ProfileImage';
 import styles from './styles/profileStyles';
 import BioText from './components/BioText';
@@ -7,10 +7,9 @@ import SocialButton from './components/SocialButton';
 
 const App: React.FC = () => {
   return (
-    // eslint-disable-next-line react-native/no-inline-styles
     <ScrollView contentContainerStyle={styles.container}>
       <ProfileImage imageUrl="https://avatars.githubusercontent.com/u/8147523?v=4" />
-
+      <Text style={styles.name}>Ezio Tristão</Text>
       <BioText
         text="I am a software engineer passionate about creating innovative solutions
         that generate value for businesses and users. My experience spans the
@@ -33,10 +32,15 @@ const App: React.FC = () => {
       <SocialButton
         title="LinkedIn"
         onPress={() =>
-          Linking.openURL('https://www.linkedin.com/in/your-profile')
+          Linking.openURL('https://www.linkedin.com/in/eziotristao/')
         }
       />
-      {/* <ProfileScreen /> */}
+      <Text style={styles.quote}>
+        "Imagination is more important than knowledge. For knowledge is limited
+        to all we now know and understand, while imagination embraces the entire
+        world, and all there ever will be to know and understand."" - Albert
+        Einstein
+      </Text>
     </ScrollView>
   );
 };

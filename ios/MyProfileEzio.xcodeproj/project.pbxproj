@@ -476,6 +476,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MyProfileEzio/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ezio Moreira";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +505,7 @@
 				DEVELOPMENT_TEAM = PGW4RU2NDT;
 				INFOPLIST_FILE = MyProfileEzio/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ezio Moreira";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

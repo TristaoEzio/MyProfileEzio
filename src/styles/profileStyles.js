@@ -1,6 +1,10 @@
 import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   container: {
     flexGrow: 1,
     alignItems: 'center',
@@ -12,7 +16,7 @@ const styles = StyleSheet.create({
     height: 130,
     borderRadius: 75,
     marginBottom: 20,
-    marginTop: 100,
+    marginTop: 10,
   },
   name: {
     fontSize: 24,

@@ -1,3 +1,4 @@
+// ProfileScreen.tsx
 import React from 'react';
 import {
   View,
@@ -41,30 +42,36 @@ const ProfileScreen = () => {
         <TouchableOpacity
           accessible={true}
           accessibilityLabel="GitHub Profile"
+          style={styles.button}
           onPress={() => handlePress('https://github.com/TristaoEzio')}>
-          <Text style={styles.link}>GitHub</Text>
+          <Text style={styles.buttonText}>GitHub</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
+          style={styles.button}
           onPress={() =>
             handlePress('https://www.linkedin.com/in/your-profile')
           }>
-          <Text style={styles.link}>LinkedIn</Text>
+          <Text style={styles.buttonText}>LinkedIn</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
+          style={styles.button}
           onPress={() => handlePress('https://wa.me/your-whatsapp-number')}>
-          <Text style={styles.link}>WhatsApp</Text>
+          <Text style={styles.buttonText}>WhatsApp</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
+          style={styles.button}
           onPress={() => handlePress('https://twitter.com/your-profile')}>
-          <Text style={styles.link}>X (Twitter)</Text>
+          <Text style={styles.buttonText}>X (Twitter)</Text>
         </TouchableOpacity>
       </View>
 
       <Text style={styles.quote}>
-        "A imaginação é mais importante que o conhecimento." - Albert Einstein
+        "Imagination is more important than knowledge. For knowledge is limited
+        to all we now know and understand, while imagination embraces the entire
+        world, and all there ever will be to know and understand."" - Albert Einstein
       </Text>
     </ScrollView>
   );

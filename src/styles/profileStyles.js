@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     textAlign: 'center',
     marginTop: 20,
+    marginBottom: 20,
     paddingHorizontal: 20,
   },
 });

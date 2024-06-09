@@ -12,6 +12,7 @@ import {
 interface AccordionItemProps {
   title: string;
   content: string;
+  color?: string;
 }
 
 const AccordionItem: React.FC<AccordionItemProps> = ({title, content}) => {
@@ -77,6 +78,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     marginLeft: 20,
+    color: '#6D41F8',
   },
   content: {
     padding: 20,

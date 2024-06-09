@@ -1,25 +1,23 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View} from 'react-native';
+import AccordionItem from './AccordionItem';
+import styles from '../styles/profileStyles'; // Assuming you have a common styles file
 
-import styles from '../styles/profileStyles';
-
-const ServiceCard = () => {
+const ServiceCard: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Image
-        source={{
-          uri: 'https://www.fillar.com.br/wp-content/uploads/2021/04/site-design-web.png',
-        }}
-        style={styles.image}
+      <AccordionItem
+        title="Web Design"
+        content="Designer web apaixonado com 3 anos de experiência. Sites centrados no usuário, visualmente cativantes. Vamos criar sua obra-prima digital juntos."
       />
-      <View style={styles.textContainer}>
-        <Text style={styles.title}>Web Design</Text>
-        <Text style={styles.description}>
-          Designer web apaixonado com 3 anos de experiência. Sites centrados no
-          usuário, visualmente cativantes. Vamos criar sua obra-prima digital
-          juntos.
-        </Text>
-      </View>
+      <AccordionItem
+        title="UX/UI Design"
+        content="Desenvolvimento de interfaces de usuário para sites e aplicativos."
+      />
+      <AccordionItem
+        title="Machine Learning"
+        content="Over 10 years of experience in machine learning."
+      />
     </View>
   );
 };

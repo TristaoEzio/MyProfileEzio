@@ -4,6 +4,7 @@ import ProfileImage from './components/ProfileImage';
 import styles from './styles/profileStyles';
 import BioText from './components/BioText';
 import SocialButton from './components/SocialButton';
+import ServiceCard from './components/ServiceCard';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
       <SocialButton
         title="GitHub"
         onPress={() => Linking.openURL('https://github.com/TristaoEzio')}
+        color="#007AFF"
       />
 
       <SocialButton
@@ -34,6 +36,7 @@ const App: React.FC = () => {
         onPress={() =>
           Linking.openURL('https://www.linkedin.com/in/eziotristao/')
         }
+        color="#6D41F8"
       />
       <Text style={styles.quote}>
         "Imagination is more important than knowledge. For knowledge is limited
@@ -41,6 +44,9 @@ const App: React.FC = () => {
         world, and all there ever will be to know and understand."" - Albert
         Einstein
       </Text>
+
+      <ServiceCard />
+
     </ScrollView>
   );
 };

@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: '90%', // Makes the button take up 90% of the width
-    backgroundColor: '#1E90FF',
+    backgroundColor: '#6D41F8',
     paddingVertical: 10,
     borderRadius: 25,
     marginVertical: 5,
@@ -49,6 +49,24 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     paddingHorizontal: 20,
+  },
+  image: {
+    width: 50,
+    height: 50,
+    marginRight: 20,
+    borderRadius: 25,
+  },
+  textContainer: {
+    flex: 1,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  description: {
+    fontSize: 14,
+    color: '#555',
   },
 });
 

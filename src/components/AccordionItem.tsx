@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
   },
   title: {
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: 'bold',
     marginLeft: 20,
   },
@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   icon: {
-    width: 20,
-    height: 20,
+    width: 40,
+    height: 40,
   },
 });
 

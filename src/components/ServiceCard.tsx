@@ -7,12 +7,12 @@ const ServiceCard: React.FC = () => {
   return (
     <View style={styles.container}>
       <AccordionItem
-        title="Web Design"
-        content="Designer web apaixonado com 3 anos de experiência. Sites centrados no usuário, visualmente cativantes. Vamos criar sua obra-prima digital juntos."
+        title="Lead Mobile Developer"
+        content="Lead mobile developer with 10 years of experience."
       />
       <AccordionItem
         title="UX/UI Design"
-        content="Desenvolvimento de interfaces de usuário para sites e aplicativos."
+        content="I'm a UX/UI designer with 5 years of experience."
       />
       <AccordionItem
         title="Machine Learning"

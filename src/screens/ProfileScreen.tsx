@@ -17,10 +17,6 @@ const ProfileScreen = () => {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Image
-        source={{uri: 'https://avatars.githubusercontent.com/u/8147523?v=4'}}
-        style={styles.profileImage}
-      />
       <Text style={styles.name}>Ezio Tristão</Text>
       <Text style={styles.bio}>
         I am a software engineer passionate about creating innovative solutions
